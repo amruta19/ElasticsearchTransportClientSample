@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 3, 2008 2:22:09 PM by Hibernate Tools 3.2.0.beta8 -->
+<hibernate-mapping>
+    <class name="com.amruta.repository.EmployeeData" table="employee">
+        <comment>
+        </comment>
+
+		<id name="empId" type="int">
+            <column name="emp_id" />
+
+            <generator class="native" />
+        </id>   
+        
+         <property name="empName" type="string">
+            <column name="emp_name">
+                <comment>
+                </comment>
+            </column>
+        </property>
+        
+        <property name="empEmail" type="string">
+            <column name="emp_email">
+                <comment>
+                </comment>
+            </column>
+        </property>
+
+        <property name="empRole" type="string">
+            <column name="emp_role">
+                <comment>
+                </comment>
+            </column>
+        </property>
+
+    </class>
+</hibernate-mapping>
+

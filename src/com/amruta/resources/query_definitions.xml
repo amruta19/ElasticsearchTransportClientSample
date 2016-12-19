@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>  
+
+	<sql-query name="get_all_employees">
+      <return alias="emp" class="com.amruta.repository.EmployeeData"/>      
+      select emp.* from employee emp order by emp.emp_id asc 
+    </sql-query>
+      
+</hibernate-mapping>
